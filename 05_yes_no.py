@@ -1,0 +1,20 @@
+def yes_no(question):
+
+    error = "Please answer yes / no"
+
+    valid = False
+    while not valid:
+
+        # ask question and put response in lower case
+        response = input(question).lower()
+
+        if response == "yes" or response == "y":
+            return "yes"
+        elif response == "no" or response == "n":
+            return "no"
+        else:
+            print(error)
+
+# Main routine goes here
+
+for item in range (0, 6):

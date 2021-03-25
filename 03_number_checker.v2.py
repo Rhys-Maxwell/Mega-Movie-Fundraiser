@@ -13,10 +13,10 @@ def int_check(question, low_num, high_num):
         try:
             response = int(input(question))
 
-            if low_num <= response <= high_num:
-                return response
-            else:
+            if response <= 0:
                 print(error)
+            else:
+                return error
 
 
                 # if an integer is not entered, display an error
